@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para Dafne ❤️</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <!-- Pantalla 1 -->
+        <section class="page active" id="welcome">
+
+            <div class="card">
+
+                <h1>Hola, Calabacita ❤️</h1>
+
+                <p>
+                    Hice algo muy especial para ti.
+                </p>
+
+                <button onclick="nextPage('letter')">
+                    Comenzar
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Pantalla 2 -->
+        <section class="page" id="letter">
+
+            <div class="card">
+
+                <h2>Querida Dafne</h2>
+
+                <p>
+                    Desde hace tiempo has ocupado un lugar muy especial en mi vida.
+                </p>
+
+                <p>
+                    Me encanta pasar tiempo contigo, escuchar tu risa y descubrir cada día una razón más para admirarte.
+                </p>
+
+                <p>
+                    Dicen que cuando alguien significa mucho para ti, quieres encontrar una forma especial de decirle lo que sientes y como ingniero esta es la mía
+                </p>
+
+                <p>
+                    Espero que este pequeño detalle logre sacarte una sonrisa, porque tú has logrado sacar muchas de las mías.
+                </p>
+
+                <button onclick="nextPage('question')">
+                    Continuar
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Pantalla 3 -->
+        <section class="page" id="question">
+
+            <div class="card">
+
+                <h2>Hay algo que quiero preguntarte...</h2>
+
+                <h1>¿Te gustaría ser mi novia? ❤️</h1>
+
+                <div class="buttons">
+
+                    <button onclick="accept()">
+                        Sí ❤️
+                    </button>
+
+                    <button class="secondary" onclick="thinking()">
+                        Necesito pensarlo
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Pantalla 4 -->
+        <section class="page" id="success">
+
+            <div class="card">
+
+                <h1>❤️</h1>
+
+                <h2>Gracias, Calabacita.</h2>
+
+                <p>
+                    No sabes lo feliz que me hace comenzar esta historia contigo.
+                </p>
+
+                <a class="download-btn" href="acta_de_noviazgo.pdf" download="acta_de_noviazgo.pdf">
+                    <button>
+                        Descargar nuestra Acta
+                    </button>
+                </a>
+
+                <p class="email">
+                    También preparé una carta muy especial para ti.<br>
+                    Revisa tu correo. 💌
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- Pantalla 5 -->
+        <section class="page" id="thinking">
+
+            <div class="card">
+
+                <h2>❤️</h2>
+
+                <p>
+                    Gracias por llegar hasta aquí.
+                </p>
+
+                <p>
+                    No importa cuál sea tu respuesta, quería que supieras lo mucho que significas para mí.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="carta.js"></script>
+    <script src="email.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
