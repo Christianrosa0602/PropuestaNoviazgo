@@ -6,7 +6,7 @@ function enviarCorreo() {
 
         to_name: "Dafne",
 
-        to_email: "rosarium.software@gmail.com",
+        to_email: "dafnecache2005@gmail.com",
 
         message: carta
 
